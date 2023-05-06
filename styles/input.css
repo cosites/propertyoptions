@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Roboto, sans-serif;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.logo {
+    height: 100%;
+    object-fit: contain;
+    max-height: 56px; /* Adjust according to your navbar's height */
+}
+
+.hero-section {
+    background-image: url('/assets/hero-image.png');
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 80vh;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 21, 43, .9);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+    backdrop-filter: blur(5.5px);
+}
+
+.fullscreen-menu.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.menu-list a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu-toggle.open .line {
+    background-color: #fff;
+}
+
+.menu-toggle .line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 200ms ease;
+}
+
+.menu-toggle .line-1 {
+    top: 0;
+}
+
+.menu-toggle .line-2 {
+    top: 50%;
+    margin-top: -1.5px;
+}
+
+.menu-toggle .line-3 {
+    bottom: 0;
+}
+
+.menu-toggle.open .line-1 {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-toggle.open .line-2 {
+    opacity: 0;
+}
+
+.menu-toggle.open .line-3 {
+    transform: translateY(-10px) rotate(-45deg);
+}
