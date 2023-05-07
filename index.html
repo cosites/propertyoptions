@@ -5,21 +5,24 @@
     <meta name="description" content="DESCRIPTION">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./assets/fonts/roboto/css/all.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css">
     <title>Lorem Ipsum</title>
 </head>
-<body class="bg-[#021A35] text-white sm:mx-24 md:mx-40 xl:mx-80 2xl:mx-[20rem]">
+<body class="bg-[#021A35] text-gray-50 sm:mx-24 md:mx-40 xl:mx-80 2xl:mx-[20rem]">
     <!-- Header & Nav Bar -->
     <header>
         <nav class="container mx-auto px-6 py-4 my-2">
-            <div class="flex items-center justify-between">
-                <div class="text-xl font-semibold">
-                    <p>Lorem Ipsum Logo</p>
+            <div class="flex items-center justify-between text-xl font-thin">
+                <div class="flex mr-5">
+                    <span class="text-2xl font-thin">property</span>
+                    <img src="./assets/images/logo.svg" class="mt-[-4px] h-8">
+                    <span class="text-2xl font-light">options</span>
                 </div>
-                <div class="hidden md:flex items-center space-x-3">
-                    <a href="#" class="text-white hover:text-gray-300">Home</a>
-                    <a href="#" class="text-white hover:text-gray-300">About</a>
-                    <a href="#" class="text-white hover:text-gray-300">Services</a>
-                    <a href="#" class="text-white hover:text-gray-300">Contact</a>
+                <div class="hidden md:flex items-center space-x-3 ml-5">
+                    <a href="#" class="hover:text-yellow-200 duration-500">About</a>
+                    <a href="#" class="hover:text-yellow-200 duration-500">Services</a>
+                    <a href="#" class="hover:text-yellow-200 duration-500">Contact</a>
                 </div>
                 <button class="menu-toggle focus:outline-none" id="menu-toggle">
                     <span class="line line-1"></span>
@@ -32,10 +35,9 @@
     <!-- Small Screen Nav Items -->
     <div class="fullscreen-menu" id="menu-items">
         <div class="menu-list">
-            <a href="#" class="text-white hover:text-gray-300">Home</a>
-            <a href="#" class="text-white hover:text-gray-300">About</a>
-            <a href="#" class="text-white hover:text-gray-300">Services</a>
-            <a href="#" class="text-white hover:text-gray-300">Contact</a>
+            <a href="#" class="hover:text-yellow-200 duration-500">About</a>
+            <a href="#" class="hover:text-yellow-200 duration-500">Services</a>
+            <a href="#" class="hover:text-yellow-200 duration-500">Contact</a>
         </div>
     </div>
     <script>
@@ -49,35 +51,53 @@
 
     <!-- Main Content -->
     <main>
-        <div class="container mx-auto px-6 py-3 mt-0">
-            <img src="./assets/hero.webp" alt="Hero" class="w-full h-full object-cover object-center">
+        <div class="container mx-auto pt-3 mt-0">
+            <img src="./assets/images/hero.webp" alt="Hero" class="w-full h-full object-cover object-center">
         </div>
 
-        <div class="container mx-auto px-6 py-6">
-            <h1 class="text-2xl">Lorem ipsum dolor sit amet</h1>
-            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="bg-gray-50 text-black container mx-auto p-6">
+            <p>Have you seen a property that would make a great development, but don’t have the funds in place to pay for it right now? A Property Option could help you get your foot in the door…</p>
         </div>
 
-        <div class="bg-gray-50 w-full px-6 py-6">
-            <div class="text-black container mx-auto px-6 py-3">
-                <h1 class="text-2xl">Lorem ipsum dolor sit amet</h1>
-                <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="w-full p-6">
+            <div class="container mx-auto px-3">
+                <h1 class="text-2xl">What are property options?</h1>
+                <p class="mt-5">These are legally binding agreements that allow developers to secure the purchase of a property without having to lay down all the money upfront. Under a property option agreement, the vendor and buyer agree to a sale price, the vendor receives an option fee, and, if the deal shapes up, the buyer pays the full price when he or she is ready. If funds for the development can’t be raised or the deal doesn’t stack up, the buyer forfeits the option fee and walks away.</p>
             </div>
         </div>
-    </main>
+
+        <div class="bg-green-100 w-full p-6">
+            <div class="text-black container mx-auto px-3">
+                <h1 class="text-2xl">Put and call option property?</h1>
+                <p class="mt-5">Most Property Options have two phases – the call option property contract, which outlines the buyer’s right to purchase the property within an agreed period of time at an agreed price, and the ‘put option’ where the seller offers the property to the buyer at the agreed price at the end of the agreed period of time. While the option is in operation the seller agrees not to sell the property to a third party.</p><br>
+                <p>Property Options can work in favour of both the vendor and the buyer. For vendors, it allows them to achieve a higher market price for their property because option terms are usually around 24 months which means they can negotiate a price that is in keeping with current market trends. For buyers, as well as not having to pay all costs upfront, they can value-add to the property during the term of the option with the view of on-selling it at a higher price.</p><br>
+                <p>Before entering into an option to purchase property agreement, it’s always advisable to have a solicitor help draw up the required agreements, and the legal costs for this can vary between $1500-$2000 which should cover the drafting of the option agreement and the contract of sale that goes with it. If you want to save money on this side of the deal, you can contact the relevant land property department in your own State or Territory for a template on what to include in the option agreement.</p><br>
+                <p>The biggest cost in a property option agreement is the actual option fee, which can range between three to ten per cent of the property’s market value, although this too can be negotiated with the vendor. Although Government Stamp Duty isn’t usually paid at the time of the initial option agreement, it is payable when the property is purchased at the end of the agreed term.  The handling of this does vary from state to state though, so make sure you are aware of the stamp duty consequences before you proceed.</p><br>
+                <p>There are risks involved in this type of deal, for both the seller and buyer. For the buyer, it’s important to investigate the property you’re thinking of purchasing. Some vendors may use this type of deal if they’ve had trouble selling their property on the open market. For example, if it’s an older property that needs some work, the vendor may not have the time, capital or even inclination to get it prepared for sale, or it could be a heritage-listed property that has a number of restrictions on it in regards to renovation or refurbishment.</p><br>
+                <p>If you’re looking to invest in a parcel of land for future development, it’s important to negotiate and firm up the expectations in regards to that development through the initial contract phase as sometimes the vendor may require you to promote the site for development through a planning process which can be costly and time-intensive.</p><br>
+                <p>For vendors, there is the risk that the buyer may pull out of the deal before the end of the contract terms, but they still retain the initial option fee paid at the start of the deal.</p><br>
+            </div>
+        </div>
+
+        <div class="container mx-auto p-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 my-10">
+                <img src="./assets/images/house-0.webp">
+                <img src="./assets/images/house-1.webp">
+                <img src="./assets/images/house-2.webp">
+            </div>
+        </div>
 
     <!-- Footer -->
     <footer class="bg-blue-900 py-8">
         <div class="container mx-auto px-6 text-white">
             <div class="flex flex-wrap justify-between">
                 <div class="w-full md:w-auto mb-6 md:mb-0">
-                    <h3 class="text-xl font-semibold">Lorem Ipsum</h3>
-                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                    <h3 class="text-xl font-semibold">Property Options</h3>
+                    <p class="mt-2">Find your dream home with our extensive selection of properties and expert guidance.</p>
                 </div>
                 <div class="w-full md:w-auto mb-6 md:mb-0">
                     <h4 class="font-semibold mb-2">Quick Links</h4>
                     <ul class="list-none">
-                        <li><a href="#" class="hover:text-gray-300">Home</a></li>
                         <li><a href="#" class="hover:text-gray-300">About</a></li>
                         <li><a href="#" class="hover:text-gray-300">Services</a></li>
                         <li><a href="#" class="hover:text-gray-300">Contact</a></li>
@@ -92,7 +112,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="mt-8 border-t border-gray-700 pt-6 text-center">
+            <div class="mt-8 border-t-[0.25px] border-white pt-6 text-center">
                 <p class="text-sm">&copy; 2023 &ltCOMPANY_NAME&gt. All rights reserved.</p>
             </div>
         </div>
